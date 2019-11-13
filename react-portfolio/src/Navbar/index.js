@@ -19,6 +19,9 @@ import {
     DropdownItem
 } from 'reactstrap';
 
+import AwesomeSlider from 'react-awesome-slider';
+import 'react-awesome-slider/dist/styles.css';
+
 
 
 class NavbarClass extends Component {
@@ -53,7 +56,7 @@ class NavbarClass extends Component {
                         <Collapse isOpen={this.isOpen} navbar>
                             <Nav className="ml-auto" navbar>
                                 <NavItem>
-                                    <NavLink href="/components/">Components</NavLink>
+                                    <Link to="/projects">Projects</Link>
                                 </NavItem>
                                 <NavItem>
                                     <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
