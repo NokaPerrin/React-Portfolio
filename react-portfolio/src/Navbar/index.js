@@ -1,10 +1,5 @@
-import React, { Component, useState } from "react";
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link
-} from "react-router-dom";
+import React, { Component } from "react";
+import { BrowserRouter as Router, Link } from "react-router-dom";
 import {
     Collapse,
     Navbar,
@@ -12,17 +7,8 @@ import {
     NavbarBrand,
     Nav,
     NavItem,
-    NavLink,
-    UncontrolledDropdown,
-    DropdownToggle,
-    DropdownMenu,
-    DropdownItem
+    NavLink
 } from 'reactstrap';
-
-import AwesomeSlider from 'react-awesome-slider';
-import 'react-awesome-slider/dist/styles.css';
-
-
 
 class NavbarClass extends Component {
 
@@ -61,23 +47,6 @@ class NavbarClass extends Component {
                                 <NavItem>
                                     <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
                                 </NavItem>
-                                <UncontrolledDropdown nav inNavbar>
-                                    <DropdownToggle nav caret>
-                                        Options
-                        </DropdownToggle>
-                                    <DropdownMenu right>
-                                        <DropdownItem>
-                                            Option 1
-                </DropdownItem>
-                                        <DropdownItem>
-                                            Option 2
-                </DropdownItem>
-                                        <DropdownItem divider />
-                                        <DropdownItem>
-                                            Reset
-                </DropdownItem>
-                                    </DropdownMenu>
-                                </UncontrolledDropdown>
                             </Nav>
                         </Collapse>
                     </Navbar>
