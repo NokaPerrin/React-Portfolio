@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import {
     Collapse,
     Navbar,
@@ -9,6 +9,7 @@ import {
     NavItem,
     NavLink
 } from 'reactstrap';
+import './Index.css';
 
 class NavbarClass extends Component {
 
@@ -33,25 +34,26 @@ class NavbarClass extends Component {
 
     render() {
 
-        return (
-            <Router>
+        return(
                 <div>
                     <Navbar color="light" light expand="md">
-                        <NavbarBrand href="/">Cameron Perrin</NavbarBrand>
+                        <Link id="websiteName" to="/">Cameron Perrin</Link>
                         <NavbarToggler onClick={this.toggle} />
                         <Collapse isOpen={this.isOpen} navbar>
                             <Nav className="ml-auto" navbar>
                                 <NavItem>
-                                    <Link to="/projects">Projects</Link>
+                                    <Link className="navLink" to="/projects">Projects</Link>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
+                                    <Link className="navLink" to="/about">About</Link>
+                                </NavItem>
+                                <NavItem>
+                                    <Link className="navLink" to="/contact">Contact</Link>
                                 </NavItem>
                             </Nav>
                         </Collapse>
                     </Navbar>
                 </div>
-            </Router>
         )
     }
 }

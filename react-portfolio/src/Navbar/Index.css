@@ -1,0 +1,12 @@
+#websiteName {
+ text-decoration: none;
+ color: grey;
+}
+
+.navLink{
+color: gray;
+padding: 2rem;
+}
+.navbar{
+    height: 3rem;
+}

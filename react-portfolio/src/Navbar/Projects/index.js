@@ -5,6 +5,8 @@ class Projects extends Component {
         return (
             <div id="projectPage">
                 Projects
+                and 
+                things
             </div>
         )
     }
